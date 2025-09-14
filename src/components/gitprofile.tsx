@@ -204,13 +204,15 @@ const GitProfile = ({ config }: { config: Config }) => {
                     loading={loading}
                     avatarRing={sanitizedConfig.themeConfig.displayAvatarRing}
                     resumeFileUrl={sanitizedConfig.resume.fileUrl}
-                  />
-                  <DetailsCard
-                    profile={profile}
-                    loading={loading}
                     github={sanitizedConfig.github}
                     social={sanitizedConfig.social}
                   />
+                  {sanitizedConfig.educations.length !== 0 && (
+                    <EducationCard
+                      loading={loading}
+                      educations={sanitizedConfig.educations}
+                    />
+                  )}
                   {sanitizedConfig.skills.length !== 0 && (
                     <SkillCard
                       loading={loading}

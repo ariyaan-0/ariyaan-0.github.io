@@ -44,7 +44,7 @@ export interface SanitizedSEO {
 
 export interface SanitizedSocial {
   linkedin?: string;
-  x?: string;
+  twitter?: string;
   mastodon?: string;
   researchGate?: string;
   facebook?: string;
@@ -59,10 +59,17 @@ export interface SanitizedSocial {
   dev?: string;
   stackoverflow?: string;
   website?: string;
+  skype?: string;
   telegram?: string;
   phone?: string;
   email?: string;
-  discord?: string;
+}
+
+export interface SanitizedContact {
+  senderName?: string;
+  senderEmail?: string;
+  subject?: string;
+  message?: string;
 }
 
 export interface SanitizedResume {
@@ -75,6 +82,15 @@ export interface SanitizedExperience {
   from: string;
   to: string;
   companyLink?: string;
+  description?: string;
+}
+
+export interface SanitizedExtraCurricularActivity {
+  company?: string;
+  position?: string;
+  year: string;
+  companyLink?: string;
+  logoUrl?: string;
 }
 
 export interface SanitizedCertification {
@@ -89,6 +105,7 @@ export interface SanitizedEducation {
   degree?: string;
   from: string;
   to: string;
+  logoUrl?: string;
 }
 
 export interface SanitizedPublication {
@@ -116,12 +133,42 @@ export interface SanitizedBlog {
   limit: number;
 }
 
+export interface SanitizedAward {
+  title: string;
+  year: number;
+  description: string;
+  logoUrl?: string;
+  link?: string;
+  imageUrl1?: string;
+  imageUrl2?: string;
+}
+
+export interface SanitizedCustomTheme {
+  primary: string;
+  secondary: string;
+  accent: string;
+  neutral: string;
+  'base-100': string;
+  '--rounded-box': string;
+  '--rounded-btn': string;
+}
+
 export interface SanitizedThemeConfig {
   defaultTheme: string;
   disableSwitch: boolean;
   respectPrefersColorScheme: boolean;
   displayAvatarRing: boolean;
   themes: Array<string>;
+  customTheme: SanitizedCustomTheme;
+}
+
+export interface SanitizedSkills {
+  languages?: Array<string>;
+  frameworks?: Array<string>;
+  databases?: Array<string>;
+  tools?: Array<string>;
+  cloud?: Array<string>;
+  ml?: Array<string>;
 }
 
 export interface SanitizedConfig {
@@ -129,14 +176,17 @@ export interface SanitizedConfig {
   projects: SanitizedProjects;
   seo: SanitizedSEO;
   social: SanitizedSocial;
+  contact: SanitizedContact;
   resume: SanitizedResume;
-  skills: Array<string>;
+  skills: SanitizedSkills;
   experiences: Array<SanitizedExperience>;
+  extraCurricularActivities: Array<SanitizedExtraCurricularActivity>;
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;
   publications: Array<SanitizedPublication>;
   googleAnalytics: SanitizedGoogleAnalytics;
   hotjar: SanitizedHotjar;
+  awards: Array<SanitizedAward>;
   blog: SanitizedBlog;
   themeConfig: SanitizedThemeConfig;
   footer?: string;
