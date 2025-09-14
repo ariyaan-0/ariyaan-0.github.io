@@ -153,21 +153,24 @@ const CONFIG = {
       degree: 'B.Sc in Computer Science and Engineering',
       from: '2020',
       to: '2024',
-      logoUrl: 'public/uni.png',
+      logoUrl:
+        'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/refs/heads/main/public/uni.png',
     },
     {
       institution: 'Brahmanbaria Government College',
       degree: 'Higher Secondary Certificate (HSC)',
       from: '2016',
       to: '2018',
-      logoUrl: 'public/bbaria.png',
+      logoUrl:
+        'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/refs/heads/main/public/bbaria.png',
     },
     {
       institution: 'Annada Government High School',
       degree: 'Secondary School Certificate (SSC)',
       from: '2014',
       to: '2016',
-      logoUrl: 'public/annada.png',
+      logoUrl:
+        'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/refs/heads/main/public/annada.png',
     },
   ],
   publications: [
@@ -197,14 +200,16 @@ const CONFIG = {
       year: 2024,
       description:
         'Awarded a full tuition-free Merit Scholarship by East West University for outstanding academic performance in the B.Sc. in Computer Science and Engineering program. This recognition is given to students in the top 10% who have completed at least 35 credits over three consecutive semesters with a minimum CGPA of 3.90. I achieved a CGPA of 3.91 out of 4.00, qualifying for this prestigious honor in the Summer 2023 semester.',
-      logoUrl: 'public/uni.png',
+      logoUrl:
+        'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/refs/heads/main/public/uni.png',
     },
     {
       title: 'Medha Lalon Scholarship',
       year: 2021,
       description:
         'Received the Medha Lalon Fund Scholarship from East West University for academic excellence in the CSE program. This merit-based scholarship recognizes students (CGPA 3.50+) from diverse and underrepresented backgrounds.',
-      logoUrl: 'public/uni.png',
+      logoUrl:
+        'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/refs/heads/main/public/uni.png',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
