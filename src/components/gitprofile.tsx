@@ -17,7 +17,7 @@ import ThemeChanger from './theme-changer';
 import { BG_COLOR } from '../constants';
 import AvatarCard from './avatar-card';
 import { Profile } from '../interfaces/profile';
-import DetailsCard from './details-card';
+import AwardCard from './award-card';
 import SkillCard from './skill-card';
 import ExperienceCard from './experience-card';
 import EducationCard from './education-card';
@@ -213,16 +213,23 @@ const GitProfile = ({ config }: { config: Config }) => {
                       educations={sanitizedConfig.educations}
                     />
                   )}
-                  {sanitizedConfig.skills.length !== 0 && (
+
+                  {sanitizedConfig.awards.length !== 0 && (
+                    <div className="mt-6 -mx-4 lg:-mx-10 px-4 lg:px-10">
+                      <AwardCard
+                        header="Awards"
+                        loading={loading}
+                        awards={sanitizedConfig.awards}
+                      />
+                    </div>
+                  )}
+
+                  {Object.values(sanitizedConfig.skills).some(
+                    (arr) => arr?.length > 0,
+                  ) && (
                     <SkillCard
                       loading={loading}
                       skills={sanitizedConfig.skills}
-                    />
-                  )}
-                  {sanitizedConfig.experiences.length !== 0 && (
-                    <ExperienceCard
-                      loading={loading}
-                      experiences={sanitizedConfig.experiences}
                     />
                   )}
                   {sanitizedConfig.certifications.length !== 0 && (
@@ -231,16 +238,16 @@ const GitProfile = ({ config }: { config: Config }) => {
                       certifications={sanitizedConfig.certifications}
                     />
                   )}
-                  {sanitizedConfig.educations.length !== 0 && (
-                    <EducationCard
-                      loading={loading}
-                      educations={sanitizedConfig.educations}
-                    />
-                  )}
                 </div>
               </div>
               <div className="lg:col-span-2 col-span-1">
                 <div className="grid grid-cols-1 gap-6">
+                  {sanitizedConfig.experiences.length !== 0 && (
+                    <ExperienceCard
+                      loading={loading}
+                      experiences={sanitizedConfig.experiences}
+                    />
+                  )}
                   {sanitizedConfig.projects.github.display && (
                     <GithubProjectCard
                       header={sanitizedConfig.projects.github.header}

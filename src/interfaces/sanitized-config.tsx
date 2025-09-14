@@ -164,7 +164,7 @@ export interface SanitizedThemeConfig {
 
 export interface SanitizedSkills {
   languages?: Array<string>;
-  frameworks?: Array<string>;
+  webtechnologies?: Array<string>;
   databases?: Array<string>;
   tools?: Array<string>;
   cloud?: Array<string>;

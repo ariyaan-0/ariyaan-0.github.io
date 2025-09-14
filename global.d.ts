@@ -113,9 +113,9 @@ interface Social {
   linkedin?: string;
 
   /**
-   * X (formerly Twitter)
+   * Twitter
    */
-  x?: string;
+  twitter?: string;
 
   /**
    * Mastodon
@@ -188,6 +188,11 @@ interface Social {
   website?: string;
 
   /**
+   * Skype username
+   */
+  skype?: string;
+
+  /**
    * Telegram username
    */
   telegram?: string;
@@ -201,11 +206,13 @@ interface Social {
    * Email
    */
   email?: string;
+}
 
-  /**
-   * Discord username
-   */
-  discord?: string;
+interface Contact {
+  senderName?: string;
+  senderEmail?: string;
+  subject?: string;
+  message?: string;
 }
 
 interface Resume {
@@ -221,6 +228,15 @@ interface Experience {
   from: string;
   to: string;
   companyLink?: string;
+  description?: string;
+}
+
+interface ExtraCurricularActivity {
+  company?: string;
+  year: string;
+  position?: string;
+  companyLink?: string;
+  logoUrl?: string;
 }
 
 interface Certification {
@@ -235,6 +251,7 @@ interface Education {
   degree?: string;
   from: string;
   to: string;
+  logoUrl?: string;
 }
 
 interface Publication {
@@ -244,6 +261,25 @@ interface Publication {
   authors?: string;
   link?: string;
   description?: string;
+}
+
+interface Award {
+  title: string;
+  year?: string;
+  link?: string;
+  logoUrl?: string;
+  imageUrl1?: string;
+  imageUrl2?: string;
+  description: string;
+}
+
+interface Skill {
+  languages?: Array<string>;
+  frameworks?: Array<string>;
+  databases?: Array<string>;
+  tools?: Array<string>;
+  cloud?: Array<string>;
+  ml?: Array<string>;
 }
 
 interface GoogleAnalytics {
@@ -284,6 +320,43 @@ interface Blog {
   limit?: number;
 }
 
+interface CustomTheme {
+  /**
+   * Primary color
+   */
+  primary?: string;
+
+  /**
+   * Secondary color
+   */
+  secondary?: string;
+
+  /**
+   * Accent color
+   */
+  accent?: string;
+
+  /**
+   * Neutral color
+   */
+  neutral?: string;
+
+  /**
+   * Base color of page
+   */
+  'base-100'?: string;
+
+  /**
+   * Border radius of rounded-box
+   */
+  '--rounded-box'?: string;
+
+  /**
+   * Border radius of rounded-btn
+   */
+  '--rounded-btn'?: string;
+}
+
 interface ThemeConfig {
   /**
    * Default theme
@@ -309,6 +382,11 @@ interface ThemeConfig {
    * Available themes
    */
   themes?: Array<string>;
+
+  /**
+   * Custom theme
+   */
+  customTheme?: CustomTheme;
 }
 
 interface Config {
@@ -338,14 +416,24 @@ interface Config {
   social?: Social;
 
   /**
+   * Contact form
+   */
+  contact?: Contact;
+
+  /**
    * Skill list
    */
-  skills?: Array<string>;
+  skills?: Skills;
 
   /**
    * Experience list
    */
   experiences?: Array<Experience>;
+
+  /**
+   * Extra Curricular Activities list
+   */
+  extraCurricularActivities?: Array<ExtraCurricularActivity>;
 
   /**
    * Certifications list
@@ -361,6 +449,11 @@ interface Config {
    * Publication list
    */
   publications?: Array<Publication>;
+
+  /**
+   * Awards list
+   */
+  awards?: Array<Award>;
 
   /**
    * Resume
