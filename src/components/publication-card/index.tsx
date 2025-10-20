@@ -14,7 +14,7 @@ const PublicationCard = ({
     const array = [];
     for (let index = 0; index < publications.length; index++) {
       array.push(
-        <div className="card shadow-md card-sm bg-base-100" key={index}>
+        <div className="card shadow-md bg-base-100" key={index}>
           <div className="p-8 h-full w-full">
             <div className="flex items-center flex-col">
               <div className="w-full">
@@ -77,7 +77,7 @@ const PublicationCard = ({
   const renderPublications = () => {
     return publications.map((item, index) => (
       <a
-        className="card shadow-md card-sm bg-base-100 cursor-pointer"
+        className="card shadow-md bg-base-100 cursor-pointer hover:shadow-lg transition-all duration-300"
         key={index}
         href={item.link}
         target="_blank"
@@ -88,24 +88,26 @@ const PublicationCard = ({
             <div className="w-full">
               <div className="px-4">
                 <div className="text-center w-full">
-                  <h2 className="font-medium opacity-60 mb-2">{item.title}</h2>
+                  <h2 className="font-medium opacity-70 mb-2 text-lg">
+                    {item.title}
+                  </h2>
                   {item.conferenceName && (
-                    <p className="text-base-content opacity-50 text-sm">
+                    <p className="text-base-content opacity-60 text-sm">
                       {item.conferenceName}
                     </p>
                   )}
                   {item.journalName && (
-                    <p className="text-base-content opacity-50 text-sm">
+                    <p className="text-base-content opacity-60 text-sm">
                       {item.journalName}
                     </p>
                   )}
                   {item.authors && (
-                    <p className="text-base-content opacity-50 text-sm">
+                    <p className="text-base-content opacity-60 text-sm">
                       Author: {item.authors}
                     </p>
                   )}
                   {item.description && (
-                    <p className="mt-2 text-base-content text-sm text-justify">
+                    <p className="mt-3 text-base-content text-sm text-justify leading-relaxed">
                       {item.description}
                     </p>
                   )}
@@ -120,9 +122,10 @@ const PublicationCard = ({
 
   return (
     <Fragment>
-      <div className="col-span-1 lg:col-span-2">
+      <div className="col-span-1">
         <div className="card bg-base-200 shadow-xl border border-base-300">
           <div className="card-body p-8">
+            {/* Header Section */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
               <div className="flex items-center space-x-3">
                 {loading ? (
@@ -150,7 +153,9 @@ const PublicationCard = ({
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* Publications Section (Single Column) */}
+            <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
               {loading ? renderSkeleton() : renderPublications()}
             </div>
           </div>

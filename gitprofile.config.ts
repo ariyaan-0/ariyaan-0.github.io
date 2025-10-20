@@ -37,22 +37,22 @@ const CONFIG = {
       header: 'My Products',
       // To hide the `External Projects` section, keep it empty.
       projects: [
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
+        // {
+        //   title: 'Project Name',
+        //   description:
+        //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+        //   imageUrl:
+        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+        //   link: 'https://example.com',
+        // },
+        // {
+        //   title: 'Project Name',
+        //   description:
+        //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+        //   imageUrl:
+        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+        //   link: 'https://example.com',
+        // },
       ],
     },
   },
@@ -175,23 +175,26 @@ const CONFIG = {
   ],
   publications: [
     {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      title:
+        'Leveraging MFCC Features for Bangla Audio Emotion Classification Using a ResNet-Transformer Encoder Fusion',
+      conferenceName:
+        "Artificial Intelligence & Knowledge Processing (AIKP'25)",
+      //   journalName: 'Journal Name',
+      authors:
+        'Md Rezaul Hossain, Fakiha Rahman Soha, Tajkiratul Abida Ananna, Ruba Sazeda, Dr. Anisur Rahman',
+      //   link: 'https://example.com',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'The usage of speech data with the emerging advancement of Artificial Intelligence has significantly increased in diverse sectors, placing speech sentiment analysis as a prominent research focus within the realm of Natural Language Processing (NLP). Though Bangla is spoken by approximately 210 million people worldwide, Bangla speech sentiment analysis is still limited in research. This paper addresses the research gap by leveraging the strengths of Convolutional Neural Networks (CNN) and Transformer architectures, applied to the largest publicly available corpora in this language: SUBESO and BanglaSER. Relying on Mel-Frequency Cepstral Coefficients (MFCC), our model is trained on both datasets. This model has been evaluated on 7 distinct emotions: Surprise, Neutral, Sad, Happy, Angry, Disgust, and Fear. Our model has achieved 92% accuracy on the SUBESCO dataset. In addition, this is the first model to achieve 91% accuracy with the combined dataset (SUBESCO+BanglaSER) on 7-class Bangla speech emotion recognition using a hybrid CNN-Transformer architecture.',
     },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
+    // {
+    //   title: 'Publication Title',
+    //   conferenceName: 'Conference Name',
+    //   journalName: '',
+    //   authors: 'John Doe, Jane Smith',
+    //   link: 'https://example.com',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    // },
   ],
 
   awards: [
