@@ -102,7 +102,7 @@ const CONFIG = {
       company: 'East West University',
       position: 'Graduate Teaching Assistant',
       from: 'October 2024',
-      to: 'February 2025',
+      to: 'June 2025',
       companyLink: 'https://www.ewubd.edu/',
       description: [
         'Worked as a Graduate Teaching Assistant for the Algorithms and Big Data Analytics course, conducting lab sessions, assisting with coursework, and providing academic support. This role strengthened my leadership, communication, and classroom management skills.',
