@@ -85,7 +85,14 @@ const CONFIG = {
   },
   skills: {
     languages: ['Python', 'TypeScript/JavaScript', 'C++'],
-    frameworks: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'FastAPI'],
+    frameworks: [
+      'React.js',
+      'Next.js',
+      'Node.js',
+      'Express.js',
+      'FastAPI',
+      'Docker',
+    ],
     databases: ['MySQL', 'PostgreSQL', 'MongoDB', 'Mongoose'],
     // ml: ['Tensorflow', 'Keras', 'PyTorch'],
     security: ['JWT', 'OAuth2'],
