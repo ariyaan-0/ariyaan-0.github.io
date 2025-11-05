@@ -81,7 +81,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/393fadb5cfdb61cf737806fb9d940aea45181678/public/MD_REZAUL_HOSSAIN.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/393fadb5cfdb61cf737806fb9d940aea45181678/public/resume-rezaulHossain.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: {
     languages: ['Python', 'TypeScript/JavaScript', 'C++'],
@@ -91,6 +91,16 @@ const CONFIG = {
     security: ['JWT', 'OAuth2'],
   },
   experiences: [
+    {
+      company: 'Integratr.ai',
+      position: 'Software Engineer, Intern',
+      from: 'October 2025',
+      to: 'Present',
+      companyLink: 'https://www.integratr.ai/',
+      description: [
+        'Working on the Education CRM module of Integratr.ai — a multi-tenant AI automation platform. Responsible for developing the frontend in Next.js and integrating it with a FastAPI backend, developing a scalable, tenant-aware architecture that powers education-focused automation, and analytics.',
+      ],
+    },
     {
       company: 'East West University',
       position: 'Graduate Teaching Assistant',
