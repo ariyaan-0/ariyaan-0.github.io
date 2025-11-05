@@ -81,7 +81,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/393fadb5cfdb61cf737806fb9d940aea45181678/public/resume-rezaulHossain.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/61d17dcd58f25438643546b1d73c933da8051228/public/resume-rezaulHossain.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: {
     languages: ['Python', 'TypeScript/JavaScript', 'C++'],
