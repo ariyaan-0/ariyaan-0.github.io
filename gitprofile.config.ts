@@ -28,7 +28,7 @@ const CONFIG = {
         projects: [
           'ariyaan-0/Pensieve',
           'ariyaan-0/blogPost_with_appwirte',
-          'ariyaan-0/ielts-course-landing',
+          'ariyaan-0/N8Ventory',
           'ariyaan-0/ChessEngine-withAI',
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
