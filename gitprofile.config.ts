@@ -81,7 +81,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/61d17dcd58f25438643546b1d73c933da8051228/public/resume-rezaulHossain.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://viewscreen.githubusercontent.com/view/pdf?browser=chrome&bypass_fastly=true&color_mode=dark&commit=2b91557526629b3f4b7b41a847e728417f63bd19&device=unknown_device&docs_host=https%3A%2F%2Fdocs.github.com&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6172697961616e2d302f6172697961616e2d302e6769746875622e696f2f326239313535373532363632396233663462376234316138343765373238343137663633626431392f7075626c69632f726573756d652d72657a61756c486f737361696e2e706466&link_underline_enabled=true&logged_in=true&nwo=ariyaan-0%2Fariyaan-0.github.io&path=public%2Fresume-rezaulHossain.pdf&platform=mac&repository_id=1056438869&repository_type=Repository&version=142#c5d17e21-232c-4746-89b1-b30795d09ab8', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: {
     languages: ['Python', 'TypeScript/JavaScript', 'C++'],
