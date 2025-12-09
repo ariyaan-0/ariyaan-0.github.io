@@ -105,7 +105,7 @@ const CONFIG = {
       to: 'Present',
       companyLink: 'https://www.integratr.ai/',
       description: [
-        'Working on the Education CRM module of Integratr.ai — a multi-tenant AI automation platform. Responsible for developing the frontend in Next.js and integrating it with a FastAPI backend, developing a scalable, tenant-aware architecture that powers education-focused automation, and analytics.',
+        'Building the backend infrastructure for a multi-tenant AI automation platform using FastAPI. Responsible for architecting scalable, tenant-aware systems, implementing data isolation and security layers, developing RESTful APIs for education-focused automation workflows and analytics, and ensuring seamless integration with the Next.js frontend.',
       ],
     },
     {
