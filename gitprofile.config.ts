@@ -85,22 +85,15 @@ const CONFIG = {
   },
   skills: {
     languages: ['Python', 'TypeScript/JavaScript', 'C++'],
-    frameworks: [
-      'React.js',
-      'Next.js',
-      'Node.js',
-      'Express.js',
-      'FastAPI',
-      'Docker',
-    ],
-    databases: ['MySQL', 'PostgreSQL', 'MongoDB', 'Mongoose'],
+    frameworks: ['Next.js', 'Node.js', 'Express.js', 'FastAPI', 'Docker'],
+    databases: ['PostgreSQL', 'SQLAlchemy', 'MongoDB', 'Mongoose'],
     // ml: ['Tensorflow', 'Keras', 'PyTorch'],
-    security: ['JWT', 'OAuth2'],
+    // security: ['JWT', 'OAuth2'],
   },
   experiences: [
     {
       company: 'Integratr.ai',
-      position: 'Software Engineer, Intern',
+      position: 'Software Engineer',
       from: 'October 2025',
       to: 'Present',
       companyLink: 'https://www.integratr.ai/',
