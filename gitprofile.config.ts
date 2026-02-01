@@ -192,7 +192,7 @@ const CONFIG = {
       //   journalName: 'Journal Name',
       authors:
         'Md Rezaul Hossain, Fakiha Rahman Soha, Tajkiratul Abida Ananna, Ruba Sazeda, Dr. Anisur Rahman',
-      //   link: 'https://example.com',
+      link: 'https://link.springer.com/chapter/10.1007/978-3-032-14706-6_16',
       description:
         'The usage of speech data with the emerging advancement of Artificial Intelligence has significantly increased in diverse sectors, placing speech sentiment analysis as a prominent research focus within the realm of Natural Language Processing (NLP). Though Bangla is spoken by approximately 210 million people worldwide, Bangla speech sentiment analysis is still limited in research. This paper addresses the research gap by leveraging the strengths of Convolutional Neural Networks (CNN) and Transformer architectures, applied to the largest publicly available corpora in this language: SUBESO and BanglaSER. Relying on Mel-Frequency Cepstral Coefficients (MFCC), our model is trained on both datasets. This model has been evaluated on 7 distinct emotions: Surprise, Neutral, Sad, Happy, Angry, Disgust, and Fear. Our model has achieved 92% accuracy on the SUBESCO dataset. In addition, this is the first model to achieve 91% accuracy with the combined dataset (SUBESCO+BanglaSER) on 7-class Bangla speech emotion recognition using a hybrid CNN-Transformer architecture.',
     },
