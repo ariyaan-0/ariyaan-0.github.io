@@ -98,7 +98,7 @@ const CONFIG = {
       to: 'Present',
       companyLink: 'https://www.integratr.ai/',
       description: [
-        'Building the backend infrastructure for a multi-tenant AI automation platform using FastAPI. Contributing to the design of scalable, tenant-aware systems, implementing data isolation and security layers, developing RESTful APIs for education-focused automation workflows and analytics, and ensuring seamless integration with the Next.js frontend.',
+        'Developing a multi-tenant AI automation backend using FastAPI with secure tenant isolation and scalable architecture. Building RESTful APIs for education automation workflows and analytics, and integrating with a Next.js frontend.',
       ],
     },
     {
