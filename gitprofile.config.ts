@@ -27,8 +27,8 @@ const CONFIG = {
         // Properties for manually specifying projects
         projects: [
           'ariyaan-0/Pensieve',
-          'ariyaan-0/blogPost_with_appwirte',
           'ariyaan-0/N8Ventory',
+          'ariyaan-0/Hive',
           'ariyaan-0/ChessEngine-withAI',
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
@@ -37,14 +37,14 @@ const CONFIG = {
       header: 'Deployed Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
-        // {
-        //   title: 'Hive',
-        //   description:
-        //     'Hive is a hyperlocal social media platform designed to foster real-time community engagement within a 2-3km radius. Built with React 19 and FastAPI, it allows users to share text and media-rich posts, participate in threaded discussions, and influence content visibility through a custom voting system.',
-        //   imageUrl:
-        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-        //   link: 'https://hiveroom.online',
-        // },
+        {
+          title: 'Hive',
+          description:
+            'Hive is a hyperlocal social media platform designed to foster real-time community engagement within a 2-3km radius. Built with React 19 and FastAPI, it allows users to share text and media-rich posts, participate in threaded discussions, and influence content visibility through a custom voting system.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://hiveroom.online',
+        },
         // {
         //   title: 'Project Name',
         //   description:
