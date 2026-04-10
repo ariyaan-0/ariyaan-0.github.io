@@ -81,7 +81,16 @@ const GitProfile = ({ config }: { config: Config }) => {
         });
         const repoData = repoResponse.data;
 
-        return repoData.items;
+        return repoData.items.sort((a: GithubProject, b: GithubProject) => {
+          const indexA = sanitizedConfig.projects.github.manual.projects.findIndex(
+            (project) => project.toLowerCase() === a.full_name.toLowerCase(),
+          );
+          const indexB = sanitizedConfig.projects.github.manual.projects.findIndex(
+            (project) => project.toLowerCase() === b.full_name.toLowerCase(),
+          );
+
+          return indexA - indexB;
+        });
       }
     },
     [
@@ -248,6 +257,16 @@ const GitProfile = ({ config }: { config: Config }) => {
                       experiences={sanitizedConfig.experiences}
                     />
                   )}
+                  {sanitizedConfig.projects.external.projects.length !== 0 && (
+                    <ExternalProjectCard
+                      loading={loading}
+                      header={sanitizedConfig.projects.external.header}
+                      externalProjects={
+                        sanitizedConfig.projects.external.projects
+                      }
+                      googleAnalyticId={sanitizedConfig.googleAnalytics.id}
+                    />
+                  )}
                   {sanitizedConfig.projects.github.display && (
                     <GithubProjectCard
                       header={sanitizedConfig.projects.github.header}
@@ -261,16 +280,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                     <PublicationCard
                       loading={loading}
                       publications={sanitizedConfig.publications}
-                    />
-                  )}
-                  {sanitizedConfig.projects.external.projects.length !== 0 && (
-                    <ExternalProjectCard
-                      loading={loading}
-                      header={sanitizedConfig.projects.external.header}
-                      externalProjects={
-                        sanitizedConfig.projects.external.projects
-                      }
-                      googleAnalyticId={sanitizedConfig.googleAnalytics.id}
                     />
                   )}
                   {sanitizedConfig.blog.display && (

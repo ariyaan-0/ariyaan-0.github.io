@@ -26,10 +26,10 @@ const CONFIG = {
       manual: {
         // Properties for manually specifying projects
         projects: [
-          'ariyaan-0/Pensieve',
-          'ariyaan-0/N8Ventory',
           'ariyaan-0/Hive',
           'ariyaan-0/ChessEngine-withAI',
+          'ariyaan-0/N8Ventory',
+          'ariyaan-0/Pensieve',
         ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
@@ -42,7 +42,7 @@ const CONFIG = {
           description:
             'Hive is a hyperlocal social media platform designed to foster real-time community engagement within a 2-3km radius. Built with React 19 and FastAPI, it allows users to share text and media-rich posts, participate in threaded discussions, and influence content visibility through a custom voting system.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/refs/heads/main/public/hive_logo.png',
           link: 'https://hiveroom.online',
         },
         // {
@@ -93,7 +93,7 @@ const CONFIG = {
   experiences: [
     {
       company: 'Integratr.ai',
-      position: 'Software Engineer',
+      position: 'Junior Software Engineer',
       from: 'October 2025',
       to: 'Present',
       companyLink: 'https://www.integratr.ai/',

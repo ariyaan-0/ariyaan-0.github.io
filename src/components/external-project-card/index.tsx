@@ -156,8 +156,24 @@ const ExternalProjectCard = ({
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {loading ? renderSkeleton() : renderExternalProjects()}
+            <div
+              className={
+                externalProjects.length === 1
+                  ? 'flex justify-center'
+                  : 'grid grid-cols-1 md:grid-cols-2 gap-6'
+              }
+            >
+              {loading ? (
+                externalProjects.length === 1 ? (
+                  <div className="w-full md:w-1/2">{renderSkeleton()}</div>
+                ) : (
+                  renderSkeleton()
+                )
+              ) : externalProjects.length === 1 ? (
+                <div className="w-full md:w-1/2">{renderExternalProjects()}</div>
+              ) : (
+                renderExternalProjects()
+              )}
             </div>
           </div>
         </div>
