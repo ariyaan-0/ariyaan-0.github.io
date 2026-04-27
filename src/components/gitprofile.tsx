@@ -70,25 +70,32 @@ const GitProfile = ({ config }: { config: Config }) => {
         if (sanitizedConfig.projects.github.manual.projects.length === 0) {
           return [];
         }
-        const repos = sanitizedConfig.projects.github.manual.projects
-          .map((project) => `+repo:${project}`)
-          .join('');
 
-        const url = `https://api.github.com/search/repositories?q=${repos}+fork:true&type=Repositories`;
+        // Use individual repo endpoints instead of Search API —
+        // Search requires indexing & is heavily rate-limited for unauthenticated requests.
+        const repoResponses = await Promise.allSettled(
+          sanitizedConfig.projects.github.manual.projects.map((project) =>
+            axios.get(`https://api.github.com/repos/${project}`, {
+              headers: { 'Content-Type': 'application/vnd.github.v3+json' },
+            }),
+          ),
+        );
 
-        const repoResponse = await axios.get(url, {
-          headers: { 'Content-Type': 'application/vnd.github.v3+json' },
-        });
-        const repoData = repoResponse.data;
+        const repos: GithubProject[] = repoResponses
+          .filter(
+            (result): result is PromiseFulfilledResult<{ data: GithubProject }> =>
+              result.status === 'fulfilled',
+          )
+          .map((result) => result.value.data);
 
-        return repoData.items.sort((a: GithubProject, b: GithubProject) => {
+        // Preserve the order defined in config
+        return repos.sort((a: GithubProject, b: GithubProject) => {
           const indexA = sanitizedConfig.projects.github.manual.projects.findIndex(
             (project) => project.toLowerCase() === a.full_name.toLowerCase(),
           );
           const indexB = sanitizedConfig.projects.github.manual.projects.findIndex(
             (project) => project.toLowerCase() === b.full_name.toLowerCase(),
           );
-
           return indexA - indexB;
         });
       }
