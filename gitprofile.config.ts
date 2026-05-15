@@ -84,8 +84,16 @@ const CONFIG = {
       'https://raw.githubusercontent.com/ariyaan-0/ariyaan-0.github.io/fea6cdc9b7192f0c1e3bfba88910d4637ac36c43/public/resume_rezaulHossain.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: {
-    languages: ['Python', 'JavaScript', 'C++'],
-    frameworks: ['FastAPI', 'Next.js', 'Express.js', 'Docker', 'CI/CD'],
+    languages: ['Python', 'JavaScript/TypeScript', 'C++'],
+    frameworks: [
+      'FastAPI',
+      'Next.js',
+      'Express.js',
+      'Docker',
+      'CI/CD',
+      'Redis',
+      'WebSocket',
+    ],
     databases: ['PostgreSQL', 'SQLAlchemy', 'MongoDB', 'Mongoose'],
     // ml: ['Tensorflow', 'Keras', 'PyTorch'],
     // security: ['JWT', 'OAuth2'],
